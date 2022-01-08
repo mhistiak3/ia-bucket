@@ -3,7 +3,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC0QGqjwSPspsTIM5yUzDjoJwvTzGT2I2c",
+  apiKey: process.env.REACT_APP_API_KEY,
   authDomain: "ia-shopping-bucket.firebaseapp.com",
   projectId: "ia-shopping-bucket",
   storageBucket: "ia-shopping-bucket.appspot.com",
