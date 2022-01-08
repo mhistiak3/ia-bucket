@@ -1,0 +1,131 @@
+.layout {
+  width: 50%;
+  margin: auto;
+  background-color: #202124;
+  margin-top: 50px;
+  color: white;
+  position: relative;
+  height: 100%;
+}
+@media (max-width:1000px){
+  .layout{
+    width: 90%;
+  }
+}
+.inputField {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  display: grid;
+  align-items: center;
+  grid-template-columns: 10fr 1fr;
+}
+.inputField input {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+}
+.inputField input:focus {
+  outline: none;
+  border: none;
+}
+.inputField span {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* Start Slider Design */
+.slider {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.slider::-webkit-scrollbar {
+  display: none;
+}
+.slider > div {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.slider > div > img {
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  margin-right: 7px;
+}
+.arrowRight,
+.arrowLeft {
+  background-color: #7baaf7;
+  color: black;
+  position: absolute;
+  font-size: 20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  z-index: 1000;
+  padding: 3px 8px;
+  top: 75px;
+}
+.arrowRight {
+  left: -15px;
+  cursor: pointer;
+}
+.arrowLeft {
+  right: -40px;
+  cursor: pointer;
+  z-index: 100;
+}
+/* Start Slider Design */
+
+.allItems {
+  width: 100%;
+  padding: 10px;
+  overflow: auto;
+  height: 80%;
+  overflow-x: hidden;
+}
+.item {
+  display: grid;
+  grid-template-columns: 1fr 9fr 2fr;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.item:hover {
+  background-color: rgb(77, 77, 77);
+}
+.item img {
+  width: 45px;
+  border-radius: 10px;
+}
+.item > span {
+  font-size: 22px;
+}
+
+.item:hover .icon {
+  display: flex;
+}
+.icon {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  display: none;
+}
+.allItems h2 {
+  text-align: center;
+  padding-top: 30px;
+}
