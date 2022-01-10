@@ -78,7 +78,7 @@ export const completedItem = (id) => async () => {
   const {
     allBuckets: { bucket },
   } = store.getState();
-  
+
   const filterItem = bucket.filter((item) => {
     if (item.id === id) {
       item.completed = !item.completed;
@@ -88,8 +88,8 @@ export const completedItem = (id) => async () => {
       return item;
     }
   });
- const { uid } = JSON.parse(sessionStorage.getItem("user"));
- const bucketRef = doc(db, "bucket", uid);
+  const { uid } = JSON.parse(sessionStorage.getItem("user"));
+  const bucketRef = doc(db, "bucket", uid);
   await updateDoc(bucketRef, {
     bucket: filterItem,
   });

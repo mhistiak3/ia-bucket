@@ -12,6 +12,7 @@ const InputField = () => {
       const data = {
         id: Math.floor(Math.random() * 1000000),
         itemName: value,
+        itemImage:'https://site.ia-coder.com/wp-content/uploads/2022/01/bucket.png',
         completed: false,
       };
       dispatch(addData(data));

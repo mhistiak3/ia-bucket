@@ -5,7 +5,7 @@
   margin-top: 50px;
   color: white;
   position: relative;
-  height: 100%;
+ 
 }
 @media (max-width:1000px){
   .layout{
@@ -109,8 +109,9 @@
   background-color: rgb(77, 77, 77);
 }
 .item img {
-  width: 45px;
-  border-radius: 10px;
+  width: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 .item > span {
   font-size: 22px;
@@ -127,5 +128,13 @@
 }
 .allItems h2 {
   text-align: center;
-  padding-top: 30px;
+  padding: 50px;
+}
+.allItems h3 {
+  padding: 15px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.allItems h3 i{
+  padding: 3px;
 }
