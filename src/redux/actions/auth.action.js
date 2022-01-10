@@ -30,7 +30,6 @@ export const logout = () => async (dispatch) => {
     sessionStorage.removeItem("user");
     dispatch({
       type: LOG_OUT,
-  
     });
   } catch (error) {
     console.log(error.message);
