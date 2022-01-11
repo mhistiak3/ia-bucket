@@ -1,4 +1,4 @@
-import { GoogleAuthProvider, signInWithPopup,  } from "firebase/auth";
+import { GoogleAuthProvider, signInWithPopup, signOut,  } from "firebase/auth";
 import { auth } from "../../firebase";
 import { LOGIN_FAIL, LOGIN_REQUEST, LOGIN_SUCCESS, LOG_OUT } from "../constent";
 export const login = () => async (dispatch) => {
@@ -26,7 +26,7 @@ export const login = () => async (dispatch) => {
 
 export const logout = () => async (dispatch) => {
   try {
-    await auth.signOut();
+    await signOut(auth);
     sessionStorage.removeItem("user");
     dispatch({
       type: LOG_OUT,
