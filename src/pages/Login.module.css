@@ -32,3 +32,9 @@
   font-size: 25px;
   cursor: pointer;
 }
+
+@media (max-width: 700px) {
+  .login h1 {
+    font-size: 35px;
+  }
+}
